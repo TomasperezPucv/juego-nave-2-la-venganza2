@@ -1,5 +1,5 @@
 questions = ds_list_create();
-current_q = noone ;
+current_q = noone;
 current_question_index = 0;
 
 // Ejemplo: añadir 1 pregunta (usa las tuyas del documento)
