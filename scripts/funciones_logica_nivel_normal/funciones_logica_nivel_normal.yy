@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"funciones_logica_nivel_normal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"funciones_logica_nivel_normal",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

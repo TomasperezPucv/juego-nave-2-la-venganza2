@@ -54,6 +54,8 @@
     {"id":{"name":"obj_preguntas","path":"objects/obj_preguntas/obj_preguntas.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"funciones_logica_nivel_normal","path":"scripts/funciones_logica_nivel_normal/funciones_logica_nivel_normal.yy",},},
+    {"id":{"name":"game_phases","path":"scripts/game_phases/game_phases.yy",},},
     {"id":{"name":"inicializar_preguntas","path":"scripts/inicializar_preguntas/inicializar_preguntas.yy",},},
     {"id":{"name":"spr_answer","path":"sprites/spr_answer/spr_answer.yy",},},
     {"id":{"name":"spr_default_bullet","path":"sprites/spr_default_bullet/spr_default_bullet.yy",},},

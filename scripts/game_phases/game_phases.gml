@@ -1,0 +1,4 @@
+enum levelphase{
+	ETAPANORMAL,
+	ETAPAJEFE,
+}
