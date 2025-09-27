@@ -18,4 +18,8 @@ if(keyboard_check(vk_space)&&disparo_cooldown<=0){
 
 }
 
-
+//aca el testeo de perdida de vidas
+if(keyboard_check_pressed((ord("J")))){
+	global.salud --;
+	salud = global.salud
+}
