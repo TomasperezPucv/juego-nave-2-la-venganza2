@@ -1,4 +1,5 @@
 enum levelphase{
 	ETAPANORMAL,
 	ETAPAJEFE,
+	GAMEOVER,
 }
