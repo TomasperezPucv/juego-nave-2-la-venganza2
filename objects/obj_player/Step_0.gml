@@ -1,3 +1,4 @@
+salud = global.salud;
 var tecla_izquierda = keyboard_check(vk_left);
 var tecla_derecha = keyboard_check(vk_right);
 
@@ -19,7 +20,4 @@ if(keyboard_check(vk_space)&&disparo_cooldown<=0){
 }
 
 //aca el testeo de perdida de vidas
-if(keyboard_check_pressed((ord("J")))){
-	global.salud --;
-	salud = global.salud
-}
+
