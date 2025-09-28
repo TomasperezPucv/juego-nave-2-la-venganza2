@@ -23,3 +23,5 @@ get_revived = function() {
 	state_index = heart_states.HAPPY;
     
 }
+
+//human i renember ur genocides
