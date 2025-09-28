@@ -201,6 +201,85 @@ function lista_nivel1(){
 }
 
 function preguntas_jefe1(){
+	
+	// Pregunta 1
+	var q1 = ds_map_create();
+	ds_map_add(q1, "text", "Que devuelve *(&(*p)) si p apunta a x?");
+	var opts1 = ds_list_create();
+	ds_list_add(opts1, "Valor de x");        // correcta
+	ds_list_add(opts1, "Direccion de x");
+	ds_list_add(opts1, "p");
+	ds_list_add(opts1, "&p");
+	ds_map_add(q1, "options", opts1);
+	ds_map_add(q1, "correct", 0);
+	ds_map_add(q1, "not_appear", false);
+	ds_list_add(questions, q1);
+
+	// Pregunta 2
+	var q2 = ds_map_create();
+	ds_map_add(q2, "text", "Que devuelve &(*(&x))?");
+	var opts2 = ds_list_create();
+	ds_list_add(opts2, "Direccion de x");    // correcta
+	ds_list_add(opts2, "Valor de x");
+	ds_list_add(opts2, "p");
+	ds_list_add(opts2, "*p");
+	ds_map_add(q2, "options", opts2);
+	ds_map_add(q2, "correct", 0);
+	ds_map_add(q2, "not_appear", false);
+	ds_list_add(questions, q2);
+
+	// Pregunta 3
+	var q3 = ds_map_create();
+	ds_map_add(q3, "text", "Si int *p = NULL; que pasa al hacer *p?");
+	var opts3 = ds_list_create();
+	ds_list_add(opts3, "Error");             // correcta
+	ds_list_add(opts3, "Devuelve 0");
+	ds_list_add(opts3, "Direccion de p");
+	ds_list_add(opts3, "Nada");
+	ds_map_add(q3, "options", opts3);
+	ds_map_add(q3, "correct", 0);
+	ds_map_add(q3, "not_appear", false);
+	ds_list_add(questions, q3);
+
+	// Pregunta 4
+	var q4 = ds_map_create();
+	ds_map_add(q4, "text", "Que devuelve *&(*(&*&p) *p = &x)?");
+	var opts4 = ds_list_create();
+	ds_list_add(opts4, "Valor de p");        // correcta
+	ds_list_add(opts4, "Valor de x");
+	ds_list_add(opts4, "Direccion de x");
+	ds_list_add(opts4, "Error");
+	ds_map_add(q4, "options", opts4);
+	ds_map_add(q4, "correct", 0);
+	ds_map_add(q4, "not_appear", false);
+	ds_list_add(questions, q4);
+
+	// Pregunta 5
+	var q5 = ds_map_create();
+	ds_map_add(q5, "text", "Que retorna **&*(&p) si *p = &x?");
+	var opts5 = ds_list_create();
+	ds_list_add(opts5, "Valor de x");        // correcta
+	ds_list_add(opts5, "Direccion de x");
+	ds_list_add(opts5, "p");
+	ds_list_add(opts5, "&p");
+	ds_map_add(q5, "options", opts5);
+	ds_map_add(q5, "correct", 0);
+	ds_map_add(q5, "not_appear", false);
+	ds_list_add(questions, q5);
+
+	// Pregunta 6
+	var q6 = ds_map_create();
+	ds_map_add(q6, "text", "Que devuelve &(*(&(*(&(*(&(*p))))))) si p apunta a x?");
+	var opts6 = ds_list_create();
+	ds_list_add(opts6, "Direccion de x");    // correcta
+	ds_list_add(opts6, "Valor de x");
+	ds_list_add(opts6, "p");
+	ds_list_add(opts6, "*p");
+	ds_map_add(q6, "options", opts6);
+	ds_map_add(q6, "correct", 0);
+	ds_map_add(q6, "not_appear", false);
+	ds_list_add(questions, q6);
+	
 
 
 }
