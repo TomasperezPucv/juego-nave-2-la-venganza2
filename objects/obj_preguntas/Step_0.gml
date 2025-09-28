@@ -51,11 +51,17 @@ switch(phase){
 				}else{
 					phase = levelphase.ETAPANORMAL;
 					esperando_nueva_pregunta = false;
+					
 				}
 				
 				
 			}
 		
+		}else{
+			if(!instance_exists(obj_end_level)){
+				instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level);
+			}
+			
 		}
 		
 		break;

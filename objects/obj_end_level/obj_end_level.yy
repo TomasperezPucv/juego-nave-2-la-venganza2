@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_response_bad",
+  "%Name":"obj_end_level",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_response_bad",
+  "name":"obj_end_level",
   "overriddenProperties":[],
   "parent":{
     "name":"respuestas_y_mensajes",
