@@ -1,4 +1,10 @@
-y-= velocidad;
+if(enemigo){
+	y+= velocidad;
+}else{
+	y-= velocidad;
+}
+
+
 // Obtener el límite superior de la cámara (posición Y de la vista)
 var vista_top = camera_get_view_y(0);
 
