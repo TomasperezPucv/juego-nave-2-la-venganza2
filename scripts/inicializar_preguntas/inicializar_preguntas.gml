@@ -137,10 +137,10 @@ function lista_nivel1(){
 	var q11 = ds_map_create();
 	ds_map_add(q11, "text", "Que significa &x + 0 y que pasa al aplicar *(&x + 0)?");
 	var opts11 = ds_list_create();
-	ds_list_add(opts11, "&x + 0 es la direccion de x; *(&x + 0) es el valor de x"); // correcta
-	ds_list_add(opts11, "&x + 0 es el valor de x; *(&x + 0) es la direccion de x");
-	ds_list_add(opts11, "Ambos devuelven x");
-	ds_list_add(opts11, "Ambos devuelven &x");
+	ds_list_add(opts11, "&x+0 es direccion de x"); // correcta
+	ds_list_add(opts11, "&x+0 es valor de x");
+	ds_list_add(opts11, "Ambos x");
+	ds_list_add(opts11, "Ambos &x");
 	ds_map_add(q11, "options", opts11);
 	ds_map_add(q11, "correct", 0);
 	ds_map_add(q11, "not_appear", false);
@@ -200,7 +200,7 @@ function lista_nivel1(){
 	
 }
 
-function preguntas_jefe11(){
+function preguntas_jefe1(){
 
 
 }
