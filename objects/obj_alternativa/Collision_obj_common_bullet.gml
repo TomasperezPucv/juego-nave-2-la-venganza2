@@ -2,6 +2,7 @@ with (other) instance_destroy();
 //va la logica si esta bien o mal
 if(es_correcta){
 	global.puntos+=100;
+	global.respuestas_correctas++;
 	instance_create_layer(x,y,"ui",obj_response_good);
 }else{
 	global.salud--;
@@ -18,3 +19,4 @@ with(obj_enunciado){
 	destruir= true
 }
 instance_destroy();
+global.nextquestion = true;

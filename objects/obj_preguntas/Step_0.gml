@@ -1,13 +1,15 @@
 switch(phase){
 	
 	case levelphase.ETAPANORMAL:
-		
-		if(esperando_nueva_pregunta){
+		if (global.respuestas_correctas == 10){esperando_nueva_pregunta = false;}
+		if((esperando_nueva_pregunta)){
+			
 			timer_pregunta += delta_time;
-			if(timer_pregunta >= tiempo_disponible_pregunta*1000000){
+			if((timer_pregunta >= tiempo_disponible_pregunta*1000000)||(global.nextquestion==true)){
+				global.nextquestion =false;
 				timer_pregunta=0;
 				var pregunta_seleccionada  = seleccionar_pregunta();
-				if(pregunta_seleccionada !=noone){
+				if((pregunta_seleccionada !=noone)){
 					var enunciado = instance_create_layer(room_width/2,32,"ui",obj_enunciado);
 					enunciado.texto = ds_map_find_value(pregunta_seleccionada,"text");
 					var lista_de_alternativas = ds_map_find_value(pregunta_seleccionada,"options");
@@ -58,8 +60,10 @@ switch(phase){
 			}
 		
 		}else{
-			if(!instance_exists(obj_end_level)){
+			
+			if(!instance_exists(obj_end_level)&&(nivel_completado == false)){
 				instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level);
+				nivel_completado =true;
 			}
 			
 		}
