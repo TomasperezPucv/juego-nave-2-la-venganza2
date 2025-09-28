@@ -8,7 +8,7 @@ speed_y = 2;
 disparar = function(){
 	var n = random(1);
 	
-	if(n < 0.1){
+	if(n < 0.25){
 		var bala = instance_create_layer(x,y+32,"bullets",obj_common_bullet);
 		bala.angulo = pi/2;
 		bala.enemigo = true;
