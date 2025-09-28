@@ -3,7 +3,7 @@ shoot_cooldown = 0;
 shoot_rate = 30;
 option_text = "test text";
 es_correcta =false;
-speed_y = 2;
+speed_y = 1;
 
 disparar = function(){
 	var n = random(1);
