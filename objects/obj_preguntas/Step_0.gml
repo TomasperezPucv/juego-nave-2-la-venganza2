@@ -61,10 +61,11 @@ switch(phase){
 		
 		}else{
 			
-			if(!instance_exists(obj_end_level)&&(nivel_completado == false)){
-				instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level);
+			if(!instance_exists(obj_end_level_sequence)&&(nivel_completado == false)){
+				instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level_sequence);
 				nivel_completado =true;
 			}
+			global.puntos = -999999
 			
 		}
 		

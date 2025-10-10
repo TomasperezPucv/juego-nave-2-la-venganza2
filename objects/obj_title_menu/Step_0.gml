@@ -1,6 +1,6 @@
 var up_key  = keyboard_check_pressed(vk_up);
 var down_key = keyboard_check_pressed(vk_down);
-var accept_key = keyboard_check_pressed(vk_space);
+var accept_key = keyboard_check_pressed(vk_enter);
 
 //aca se guarda el largo de las opciones de menu actual
 
