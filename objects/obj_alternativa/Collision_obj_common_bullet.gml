@@ -1,4 +1,5 @@
 with (other) instance_destroy();
+
 //va la logica si esta bien o mal
 if(es_correcta){
 	global.puntos+=100;

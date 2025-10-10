@@ -1,16 +1,22 @@
-var text_w = string_width(option_text);
-var text_h = string_height(option_text);
-var margin =20;
 
-var scale_x = (text_w + margin) / sprite_width;
-var scale_y = (text_h + margin) / sprite_height;
 
-// Dibujar sprite escalado manualmente
-draw_sprite_ext(sprite_index, image_index, x, y,
-                scale_x, scale_y, image_angle,
-                c_white, image_alpha);
+//crear nuevo tamanio segun el texto
+var new_width = string_width(option_text)*scale;
+var line_height = string_height(option_text)*scale;
 
-// Dibujar texto encima
-draw_set_color(c_white);
-draw_set_font(fnt_test);
-draw_text(x - text_w/2, y - text_h/2, option_text);
+//redimensionar
+width = (new_width + border*2*scale);
+heigh = (line_height + border*2*scale);
+
+
+//aca se dibuja el fondo
+draw_sprite_ext(sprite_index,image_index,x,y,width/sprite_width,heigh/sprite_height,0,c_white,1);
+
+//dibujar el texto
+
+draw_set_font(global.font_main);
+draw_set_valign(fa_top);
+draw_set_halign(fa_left);
+
+var _c = c_white;
+draw_text_transformed_color(x+border*scale,y+border*scale ,option_text,scale,scale,0, _c,_c,_c,_c,1);

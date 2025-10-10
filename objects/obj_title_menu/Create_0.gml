@@ -1,0 +1,26 @@
+//escala para agrandar
+menu_scale = 3; 
+
+
+width = 64;
+height = 104;
+
+op_border = 8;
+op_space = 16;
+
+pos = 0;
+// primer numero sub menu del primer numero
+//pause menu
+options[0,0] = "Comenzar juego (desde nivel 1)";
+options[0,1] = "Configuraciones juego";
+options[0,2] = "Salir del juego";
+
+//settings menu
+options[1,0] = "Screen size";
+options[1,1] = "Sweel";
+options[1,2] = "Volume";
+options[1,3] = "Back";
+
+op_lenght = 0;
+menu_level = 0;
+

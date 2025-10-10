@@ -1,7 +1,11 @@
+
 if(enemigo){
+	
 	y+= velocidad;
+	sprite_index = sprites[Bullet_source.ENEMY];
 }else{
 	y-= velocidad;
+	sprite_index = sprites[Bullet_source.PLAYER];
 }
 
 

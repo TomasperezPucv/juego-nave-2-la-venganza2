@@ -18,3 +18,4 @@ if(y+speed_y > room_height){
 	
 	instance_destroy();
 }
+
