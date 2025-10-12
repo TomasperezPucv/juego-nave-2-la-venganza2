@@ -1,4 +1,7 @@
-with (other) instance_destroy();
+//----- estas colisiones no se usan porque el draw no afecta la hhitbox---
+
+
+/*with (obj_common_bullet) instance_destroy();
 
 //va la logica si esta bien o mal
 if(es_correcta){
@@ -12,7 +15,7 @@ if(es_correcta){
 }
 
 
-with(obj_alternativa){
+with(obj_alternativa_nv1){
 	instance_destroy();
 }
 
@@ -20,4 +23,4 @@ with(obj_enunciado){
 	destruir= true
 }
 instance_destroy();
-global.nextquestion = true;
+global.nextquestion = true;*/

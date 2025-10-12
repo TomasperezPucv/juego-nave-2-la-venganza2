@@ -23,17 +23,19 @@ if(accept_key){
 	switch(menu_level){
 		//pause menu
 		case 0:
-		switch(pos){
-			//comenzar juego
-			case 0: room_goto_next(); break;
+			switch(pos){
+				//comenzar juego
+				case 0: room_goto_next(); break;
 		
-			//configuraciones
-			case 1: menu_level =1; break;
+				//configuraciones
+				case 1: menu_level =1; break;
 	
-			//salir del juego
-			case 2: game_end(); break;
+				//salir del juego
+				case 2: game_end(); break;
+			
+				case 3: menu_level =3; break;
 
-		}
+			}
 		break;
 		
 		case 1:
@@ -60,7 +62,33 @@ if(accept_key){
 			
 			
 			}
-		break
+		break;
+		
+		case 3:
+			switch(pos){
+				case 0:
+				//ir a nivel 1
+				room_goto(Room1);
+				break;
+				
+				case 1:
+				//ir a nivel 2
+				global.current_level =2
+				room_goto(Room2);
+				break;
+				
+				case 2:
+				//ir a nivel 1
+				
+				break;
+				
+				case 3:
+				//regresar
+					menu_level = 0;
+				break;
+			
+			
+			}
 	
 	}
 	

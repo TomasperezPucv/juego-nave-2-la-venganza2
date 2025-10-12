@@ -31,7 +31,7 @@ switch(phase){
 						    var ancho_boton = text_w + margen * 2;
 
 						    // crear alternativa
-						    var alternativa = instance_create_layer(pos_x, altura_alternativa, "Instances", obj_alternativa);
+						    var alternativa = instance_create_layer(pos_x, altura_alternativa, "Instances", obj_alternativa_nv1);
 						    alternativa.option_text = texto;
 
 						    // marcar la correcta

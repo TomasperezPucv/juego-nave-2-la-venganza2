@@ -12,6 +12,9 @@ heigh = 64
 border = 5;
 scale =2;
 
+
+
+
 disparar = function(){
 	var n = random(1);
 	
@@ -37,7 +40,7 @@ destruccion = function(){
 	}
 
 
-	with(obj_alternativa){
+	with(obj_alternativa_nv1){
 		instance_destroy();
 	}
 

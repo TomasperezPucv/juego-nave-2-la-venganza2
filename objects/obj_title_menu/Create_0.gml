@@ -1,6 +1,6 @@
 //escala para agrandar
 menu_scale = 3; 
-
+global.current_level =1;
 
 width = 64;
 height = 104;
@@ -14,12 +14,19 @@ pos = 0;
 options[0,0] = "Comenzar juego (desde nivel 1)";
 options[0,1] = "Configuraciones juego";
 options[0,2] = "Salir del juego";
+options[0,3] = "Seleccionar nivel"
 
 //settings menu
 options[1,0] = "Screen size";
 options[1,1] = "Sweel";
 options[1,2] = "Volume";
-options[1,3] = "Back";
+options[1,3] = "Regresar";
+
+//menu de seleccion de niveles
+options[3,0]= "Nivel 1";
+options[3,1]= "Nivel 2";
+options[3,2]= "Nivel 3";
+options[3,3]= "Regresar";
 
 op_lenght = 0;
 menu_level = 0;

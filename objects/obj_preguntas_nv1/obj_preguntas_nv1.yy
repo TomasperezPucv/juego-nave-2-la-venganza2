@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_alternativa",
+  "%Name":"obj_preguntas_nv1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_common_bullet","path":"objects/obj_common_bullet/obj_common_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_alternativa",
+  "name":"obj_preguntas_nv1",
   "overriddenProperties":[],
   "parent":{
-    "name":"answers-enemies",
-    "path":"folders/Objects/answers-enemies.yy",
+    "name":"manejadores de preguntas",
+    "path":"folders/Objects/game_managers/manejadores de preguntas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_answer",
-    "path":"sprites/spr_answer/spr_answer.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
