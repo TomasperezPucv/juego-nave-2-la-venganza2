@@ -31,9 +31,9 @@ if(accept_key){
 				case 1: menu_level =1; break;
 	
 				//salir del juego
-				case 2: game_end(); break;
+				case 2: menu_level =3; break;
 			
-				case 3: menu_level =3; break;
+				case 3: game_end(); break;
 
 			}
 		break;

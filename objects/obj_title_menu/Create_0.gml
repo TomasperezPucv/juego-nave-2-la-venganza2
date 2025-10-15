@@ -13,8 +13,8 @@ pos = 0;
 //pause menu
 options[0,0] = "Comenzar juego (desde nivel 1)";
 options[0,1] = "Configuraciones juego";
-options[0,2] = "Salir del juego";
-options[0,3] = "Seleccionar nivel"
+options[0,2] = "Seleccionar nivel";
+options[0,3] = "Salir del juego";
 
 //settings menu
 options[1,0] = "Screen size";
