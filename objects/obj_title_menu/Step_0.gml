@@ -46,7 +46,8 @@ if(accept_key){
 				break;
 				
 				case 1:
-				//sweel
+				//probar dialogos
+				room_goto(rm_test_room);
 				
 				break;
 				

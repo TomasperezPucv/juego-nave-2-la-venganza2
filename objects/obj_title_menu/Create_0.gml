@@ -18,7 +18,7 @@ options[0,3] = "Seleccionar nivel"
 
 //settings menu
 options[1,0] = "Screen size";
-options[1,1] = "Sweel";
+options[1,1] = "Probar sistema de texto";
 options[1,2] = "Volume";
 options[1,3] = "Regresar";
 
