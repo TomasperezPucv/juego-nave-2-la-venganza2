@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_speak_block",
+  "%Name":"obj_cinematic_manager",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_speak_block",
+  "name":"obj_cinematic_manager",
   "overriddenProperties":[],
   "parent":{
     "name":"cinematics manager",
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_speak_wall",
-    "path":"sprites/spr_speak_wall/spr_speak_wall.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

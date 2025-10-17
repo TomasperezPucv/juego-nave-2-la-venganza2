@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"transiciones_entre_cinematica_a_nivel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"transiciones_entre_cinematica_a_nivel",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_speak_block",
+  "%Name":"obj_warp",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_speak_block",
+  "name":"obj_warp",
   "overriddenProperties":[],
   "parent":{
     "name":"cinematics manager",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_speak_wall",
-    "path":"sprites/spr_speak_wall/spr_speak_wall.yy",
+    "name":"spr_warp_transition",
+    "path":"sprites/spr_warp_transition/spr_warp_transition.yy",
   },
   "spriteMaskId":null,
   "visible":true,

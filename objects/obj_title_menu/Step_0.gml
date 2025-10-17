@@ -69,6 +69,7 @@ if(accept_key){
 			switch(pos){
 				case 0:
 				//ir a nivel 1
+				global.current_level =1;
 				room_goto(Room1);
 				break;
 				
@@ -79,7 +80,8 @@ if(accept_key){
 				break;
 				
 				case 2:
-				//ir a nivel 1
+				//ir a nivel 3
+				global.current_level =3;
 				
 				break;
 				

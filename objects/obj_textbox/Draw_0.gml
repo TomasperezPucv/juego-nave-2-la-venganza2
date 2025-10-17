@@ -1,7 +1,7 @@
 var accept_key = keyboard_check_pressed(vk_space);
 
-var textbox_x = camera_get_view_x(view_camera[0])+224;
-var textbox_y = camera_get_view_y(view_camera[0])+480;
+var textbox_x = camera_get_view_x(view_camera[0])+110;
+var textbox_y = camera_get_view_y(view_camera[0])+230;
 
 //setup
 if(setup == false){
