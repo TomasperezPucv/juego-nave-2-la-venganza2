@@ -31,15 +31,20 @@ function scr_game_text(_text_id){
 			scr_option("SI", "preparado");
 			scr_option("NO", "no preparado");
 			break;
-			case "preparado":
-			scr_text("no me lo esperaba de ti, pero veo que estas decidido en cumplir esta mision.","helper" ,-1);
-			scr_text("En ese caso","helper" ,-1);
-			scr_text("VAMOS!!!!!","helper" ,-1);
-			transicionar_a_nivel(1);
-			break;
-			case  "no preparado":
-			scr_text("ya veo. no te procupes, aun tenemos tiempo para explicarte como funcionan las cosas aca","helper" ,-1);
-			break;	
+				case "preparado":
+				scr_text("no me lo esperaba de ti, pero veo que estas decidido en cumplir esta mision.","helper" ,-1);
+				scr_text("En ese caso","helper" ,-1);
+				scr_text("VAMOS!!!!!","helper" ,-1);
+				scr_option("VAMOS", "comenzarnivel1");
+				scr_option("ahora que lo mencionas...","no preparado")
+				break;
+					case "comenzarnivel1":
+					scr_text("","helper" ,-1);
+					transicionar_a_nivel(1);
+					break;
+					case  "no preparado":
+					scr_text("ya veo. no te procupes, aun tenemos tiempo para explicarte como funcionan las cosas aca","helper" ,-1);
+					break;	
 	}
 
 }
