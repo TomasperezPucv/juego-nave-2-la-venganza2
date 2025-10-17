@@ -25,10 +25,13 @@ if(accept_key){
 		case 0:
 			switch(pos){
 				//comenzar juego
-				case 0: room_goto_next(); break;
+				case 0:
+				room_goto_next(); break;
 		
 				//configuraciones
-				case 1: menu_level =1; break;
+				case 1:
+				
+				menu_level =1; break;
 	
 				//salir del juego
 				case 2: menu_level =3; break;
@@ -47,7 +50,9 @@ if(accept_key){
 				
 				case 1:
 				//probar dialogos
-				room_goto(rm_test_room);
+				global.faseactual = levelphase.ETAPANORMAL;
+				global.cinematicaprejefe = false;
+				room_goto(cinematic_room);
 				
 				break;
 				
@@ -69,20 +74,25 @@ if(accept_key){
 			switch(pos){
 				case 0:
 				//ir a nivel 1
+				global.faseactual = levelphase.ETAPANORMAL;
+				global.cinematicaprejefe = false;
 				global.current_level =1;
 				room_goto(Room1);
 				break;
 				
 				case 1:
 				//ir a nivel 2
+				global.faseactual = levelphase.ETAPANORMAL;
+				global.cinematicaprejefe = false;
 				global.current_level =2
 				room_goto(Room2);
 				break;
 				
 				case 2:
 				//ir a nivel 3
+				global.faseactual = levelphase.ETAPANORMAL;
+				global.cinematicaprejefe = false;
 				global.current_level =3;
-				
 				break;
 				
 				case 3:

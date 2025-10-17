@@ -1,11 +1,11 @@
-switch(phase){
+switch(global.faseactual){
 	
 	case levelphase.ETAPANORMAL:
 		if (global.respuestas_correctas == 10){esperando_nueva_pregunta = false;}
 		if((esperando_nueva_pregunta)){
 			
 			timer_pregunta += delta_time;
-			if((timer_pregunta >= tiempo_disponible_pregunta*1000000)||(global.nextquestion==true)){
+			if(((timer_pregunta >= tiempo_disponible_pregunta*1000000)||(global.nextquestion==true))){
 				global.nextquestion =false;
 				timer_pregunta=0;
 				var pregunta_seleccionada  = seleccionar_pregunta();
@@ -60,19 +60,53 @@ switch(phase){
 			}
 		
 		}else{
+			var _mensaje_final = noone;
 			
 			if(!instance_exists(obj_end_level_sequence)&&(nivel_completado == false)){
-				instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level_sequence);
-				nivel_completado =true;
+				_mensaje_final = instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level_sequence);
+				nivel_completado = true;
 			}
-			global.puntos = -999999
 			
+			
+			
+			if(terminar){
+				global.faseactual = levelphase.ETAPAJEFE;
+				phase = global.faseactual;
+				if(global.cinematicaprejefe == false){
+					global.cinematicaprejefe = true;
+					transicionar_a_nivel(3);
+					
+				}
+			}
 		}
 		
 		break;
 		
 	case levelphase.ETAPAJEFE:
-	
+		
+		if(!audio_is_playing(snd_firs_boss_music)){
+				audio_play_sound(snd_firs_boss_music,0,true);
+		}
+		
+		if(!instance_exists(obj_first_boss)){
+			var jefe = instance_create_layer(room_width/2,66, "Instances",obj_first_boss)
+		}
+		terminar = false;
+		nivel_completado =false;
+		if(jefe_destruido){
+			if(!instance_exists(obj_end_level_sequence)&&(nivel_completado == false)){
+				var _mensaje_final = instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level_sequence);
+				nivel_completado = true;
+			}
+		}
+		//aca es cuando destruyes al jefe y psasas a la cinematica al siguiente nivel
+		if(terminar){
+			global.faseactual = levelphase.ETAPANORMAL;
+			if(global.cinematicaprejefe == false){
+				global.cinematicaprejefe = true;
+				transicionar_a_nivel(3);
+			}
+		}
 		break;
 		
 

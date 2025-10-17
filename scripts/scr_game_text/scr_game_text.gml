@@ -27,7 +27,7 @@ function scr_game_text(_text_id){
 			scr_text("asi es, todo en orden... por ahora.","player");
 			scr_text("En ese caso preparate, los primeros estan a punto de llegar hacia ti","helper",-1);
 			scr_text("QUE, ya mismo??","player");
-			scr_text("lamentablemente si, pero no te preocupes, tu nave esta preparada para poder defenderte, nesesitas una explicacion de como puedes hacer esto?.","helper",-1);
+			scr_text("lamentablemente si, pero no te preocupes, tu nave esta preparada para poder defenderte, nesesitas una explicacion de como puedes hacerlo?","helper",-1);
 			scr_option("SI", "preparado");
 			scr_option("NO", "no preparado");
 			break;
@@ -42,9 +42,29 @@ function scr_game_text(_text_id){
 					scr_text("","helper" ,-1);
 					transicionar_a_nivel(1);
 					break;
-					case  "no preparado":
-					scr_text("ya veo. no te procupes, aun tenemos tiempo para explicarte como funcionan las cosas aca","helper" ,-1);
-					break;	
+				case  "no preparado":
+				scr_text("ya veo. no te procupes, aun tenemos tiempo para explicarte como funcionan las cosas aca","helper" ,-1);
+				break;
+		case "pre first boss":
+			scr_text("impresionante, lo has conseguido exitosamente, bien hecho agente 4","helper",-1);
+			scr_text("gracias, crei que seria mas dificil, pero no tuve problemas","player");
+			scr_text("...","helper",-1);
+			scr_text("!!!","helper",-1);
+			scr_text("Que pasa, ocurre algo?","player");
+			scr_text("parece que viene tu primer contrincante mas fuerte que los demas, y parece que no lo podras atacar directamente","helper",-1);
+			scr_text("y como se supone que lo tenga que vencer?","player");
+			scr_text("tu contrincante se ve invulnerable pero es debil, solo intenta hacer lo que llevas haciendo hasta ahora","helper",-1);
+			scr_text("Te refieres a responder nomas?","player");
+				scr_text_color(13,29,c_yellow,c_yellow,c_yellow,c_yellow);
+			scr_text("asi es, solo intenta responder 3 preguntas correctas seguidas y lo derrotaras","helper",-1);
+				scr_text_color(12,60,c_yellow,c_yellow,c_yellow,c_yellow);
+			scr_text("lo entiendo....","player");
+			scr_option("VAMOS", "comenzarjefe1");
+		break;
+			case "comenzarjefe1":
+				scr_text("","player");
+				transicionar_a_nivel(1);
+				break;
 	}
 
 }

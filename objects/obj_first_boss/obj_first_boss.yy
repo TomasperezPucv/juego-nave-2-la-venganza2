@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_response_good",
+  "%Name":"obj_first_boss",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_common_bullet","path":"objects/obj_common_bullet/obj_common_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_response_good",
+  "name":"obj_first_boss",
   "overriddenProperties":[],
   "parent":{
-    "name":"respuestas_y_mensajes",
-    "path":"folders/Objects/game_managers/respuestas_y_mensajes.yy",
+    "name":"answers-enemies",
+    "path":"folders/Objects/answers-enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_primer_jefe",
+    "path":"sprites/spr_primer_jefe/spr_primer_jefe.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

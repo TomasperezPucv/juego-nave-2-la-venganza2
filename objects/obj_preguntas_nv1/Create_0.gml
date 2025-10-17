@@ -1,9 +1,7 @@
-//actualmente se tiene solo una lista de prueba nomas, esperare a que el arreglo/s esten listos 
-
 questions = ds_list_create();
 //pregunta_seleccionada= noone;
 current_question_index = 0;
-phase = levelphase.ETAPANORMAL;
+phase = global.faseactual;
 tiempo_disponible_pregunta=11; //11 segundos para responder 1 pregunta
 nivel_completado =false;
 //ojo con esto!!!!!!!!
@@ -15,11 +13,10 @@ esperando_nueva_pregunta = true;
 
 lista_nivel1();
 
+//esto es solo para correr la cinematica de jefe 1 vez
 
-
-
-
-
+terminar =false;
+jefe_destruido = false;
 
 //ESTO ERA PARA SABER SI SE  guardaban bienlos datos bdefhijo
 
