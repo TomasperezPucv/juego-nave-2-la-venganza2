@@ -1,3 +1,4 @@
+var _meduelelacabeza =false;
 switch(global.faseactual){
 	
 	case levelphase.ETAPANORMAL:
@@ -69,43 +70,47 @@ switch(global.faseactual){
 			
 			
 			
-			if(terminar){
+			if(terminar == true&&_meduelelacabeza==false){
+				_meduelelacabeza = true;
 				global.faseactual = levelphase.ETAPAJEFE;
-				phase = global.faseactual;
+				/*phase = global.faseactual;
 				if(global.cinematicaprejefe == false){
 					global.cinematicaprejefe = true;
-					transicionar_a_nivel(3);
+					//transicionar_a_nivel(3);
 					
-				}
+				}*/
 			}
+			terminar = false;
+			nivel_completado =false;
+			
 		}
 		
 		break;
 		
 	case levelphase.ETAPAJEFE:
 		
-		if(!audio_is_playing(snd_firs_boss_music)){
-				audio_play_sound(snd_firs_boss_music,0,true);
+		
+		
+		if(!instance_exists(obj_first_boss)&&jefe_destruido==false){
+			var jefe = instance_create_layer(room_width/2,66, "Instances",obj_first_boss)
+				if(!audio_is_playing(snd_firs_boss_music)){
+					audio_play_sound(snd_firs_boss_music,1,true);
+			}
 		}
 		
-		if(!instance_exists(obj_first_boss)){
-			var jefe = instance_create_layer(room_width/2,66, "Instances",obj_first_boss)
-		}
-		terminar = false;
-		nivel_completado =false;
 		if(jefe_destruido){
 			if(!instance_exists(obj_end_level_sequence)&&(nivel_completado == false)){
 				var _mensaje_final = instance_create_layer(room_width/2,room_height/2, "ui",obj_end_level_sequence);
 				nivel_completado = true;
+				
 			}
 		}
+		
 		//aca es cuando destruyes al jefe y psasas a la cinematica al siguiente nivel
-		if(terminar){
+		if(terminar==true&&jefe_destruido==true){
+			/*ojo*/global.current_level = 2;
 			global.faseactual = levelphase.ETAPANORMAL;
-			if(global.cinematicaprejefe == false){
-				global.cinematicaprejefe = true;
-				transicionar_a_nivel(3);
-			}
+			room_goto_next();
 		}
 		break;
 		

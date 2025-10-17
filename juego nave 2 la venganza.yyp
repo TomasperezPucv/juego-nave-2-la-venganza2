@@ -90,6 +90,7 @@
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"id":{"name":"funciones_logica_nivel_normal","path":"scripts/funciones_logica_nivel_normal/funciones_logica_nivel_normal.yy",},},
     {"id":{"name":"game_phases","path":"scripts/game_phases/game_phases.yy",},},
     {"id":{"name":"inicializar_preguntas","path":"scripts/inicializar_preguntas/inicializar_preguntas.yy",},},
@@ -147,6 +148,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"cinematic_room","path":"rooms/cinematic_room/cinematic_room.yy",},},
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

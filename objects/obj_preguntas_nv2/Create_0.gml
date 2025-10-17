@@ -1,4 +1,5 @@
 questions = ds_list_create();
+
 //pregunta_seleccionada= noone;
 current_question_index = 0;
 phase = global.faseactual;
