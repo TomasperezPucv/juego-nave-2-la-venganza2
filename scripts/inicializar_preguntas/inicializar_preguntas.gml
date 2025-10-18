@@ -200,7 +200,7 @@ function lista_nivel1(){
 	
 }
 
-function preguntas_jefe11(){
+function preguntas_jefe1(){
 
 
 }
@@ -399,4 +399,19 @@ function lista_nivel2(){
 	ds_map_add(q15, "correct", 0);
 	ds_map_add(q15, "not_appear", false);
 	ds_list_add(questions, q15);
+}
+
+function preguntas_jefe2(){
+
+
+}
+
+function lista_nivel3(){
+
+
+}
+
+function preguntas_jefe3(){
+
+
 }
