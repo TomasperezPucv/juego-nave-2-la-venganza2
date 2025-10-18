@@ -1,4 +1,4 @@
-var up_key  = keyboard_check_pressed(vk_up);
+ var up_key  = keyboard_check_pressed(vk_up);
 var down_key = keyboard_check_pressed(vk_down);
 var accept_key = keyboard_check_pressed(vk_enter);
 
@@ -53,7 +53,7 @@ if(accept_key){
 				case 1:
 				//probar dialogos
 				
-				room_goto(cinematic_room);
+				room_goto(Testing);
 				
 				break;
 				
