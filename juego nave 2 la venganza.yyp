@@ -64,6 +64,7 @@
     {"id":{"name":"obj_alternativa_nv2","path":"objects/obj_alternativa_nv2/obj_alternativa_nv2.yy",},},
     {"id":{"name":"obj_alternativa_nv3","path":"objects/obj_alternativa_nv3/obj_alternativa_nv3.yy",},},
     {"id":{"name":"obj_barrera_lateral","path":"objects/obj_barrera_lateral/obj_barrera_lateral.yy",},},
+    {"id":{"name":"obj_boss_shield","path":"objects/obj_boss_shield/obj_boss_shield.yy",},},
     {"id":{"name":"obj_cinematic_manager","path":"objects/obj_cinematic_manager/obj_cinematic_manager.yy",},},
     {"id":{"name":"obj_common_bullet","path":"objects/obj_common_bullet/obj_common_bullet.yy",},},
     {"id":{"name":"obj_contact_block","path":"objects/obj_contact_block/obj_contact_block.yy",},},

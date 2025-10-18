@@ -44,6 +44,7 @@
     {"name":"obj_alternativa_nv2","order":2,"path":"objects/obj_alternativa_nv2/obj_alternativa_nv2.yy",},
     {"name":"obj_alternativa_nv3","order":4,"path":"objects/obj_alternativa_nv3/obj_alternativa_nv3.yy",},
     {"name":"obj_barrera_lateral","order":3,"path":"objects/obj_barrera_lateral/obj_barrera_lateral.yy",},
+    {"name":"obj_boss_shield","order":5,"path":"objects/obj_boss_shield/obj_boss_shield.yy",},
     {"name":"obj_contact_block","order":2,"path":"objects/obj_contact_block/obj_contact_block.yy",},
     {"name":"obj_end_level_sequence","order":1,"path":"objects/obj_end_level_sequence/obj_end_level_sequence.yy",},
     {"name":"obj_enunciado","order":1,"path":"objects/obj_enunciado/obj_enunciado.yy",},

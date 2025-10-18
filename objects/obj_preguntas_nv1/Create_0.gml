@@ -14,10 +14,12 @@ esperando_nueva_pregunta = true;
 lista_nivel1();
 
 //esto es solo para correr la cinematica de jefe 1 vez
-
+respuestas_seguidas_jefe1 =0;
 terminar =false;
 jefe_destruido = false;
 
+//escudo =noone;
+escudo_destruido = false;
 //ESTO ERA PARA SABER SI SE  guardaban bienlos datos bdefhijo
 
 /*var enunciado = instance_create_layer(512,5920,"ui",obj_enunciado);

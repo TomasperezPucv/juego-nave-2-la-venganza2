@@ -201,7 +201,69 @@ function lista_nivel1(){
 }
 
 function preguntas_jefe1(){
+	var q1 = ds_map_create();
+	ds_map_add(q1, "text", "selecciona la correcta");
+	var opts1 = ds_list_create();
+	ds_list_add(opts1, "si");              // correcta
+	ds_list_add(opts1, "no");
+	ds_list_add(opts1, "no");
+	ds_list_add(opts1, "no");
+	ds_map_add(q1, "options", opts1);
+	ds_map_add(q1, "correct", 0);
+	ds_map_add(q1, "not_appear", false);
+	ds_list_add(questions, q1);
 
+	// Pregunta 2
+	var q2 = ds_map_create();
+	ds_map_add(q2, "text", "Cual es el valor apuntado por p?");
+	var opts2 = ds_list_create();
+	ds_list_add(opts2, "si");              // correcta
+	ds_list_add(opts2, "no");
+	ds_list_add(opts2, "no");
+	ds_list_add(opts2, "no");
+	ds_map_add(q2, "options", opts2);
+	ds_map_add(q2, "correct", 0);
+	ds_map_add(q2, "not_appear", false);
+	ds_list_add(questions, q2);
+
+	// Pregunta 3
+	var q3 = ds_map_create();
+	ds_map_add(q3, "text", "Que devuelve *(&x)?");
+	var opts3 = ds_list_create();
+	ds_list_add(opts3, "si");               // correcta
+	ds_list_add(opts3, "no");
+	ds_list_add(opts3, "no");
+	ds_list_add(opts3, "no");
+	ds_map_add(q3, "options", opts3);
+	ds_map_add(q3, "correct", 0);
+	ds_map_add(q3, "not_appear", false);
+	ds_list_add(questions, q3);
+
+	// Pregunta 4
+	var q4 = ds_map_create();
+	ds_map_add(q4, "text", "Que representa *&x si x = 10?");
+	var opts4 = ds_list_create();
+	ds_list_add(opts4, "si");               // correcta
+	ds_list_add(opts4, "no");
+	ds_list_add(opts4, "no");
+	ds_list_add(opts4, "no");
+	ds_map_add(q4, "options", opts4);
+	ds_map_add(q4, "correct", 0);
+	ds_map_add(q4, "not_appear", false);
+	ds_list_add(questions, q4);
+
+	// Pregunta 5
+	var q5 = ds_map_create();
+	ds_map_add(q5, "text", "Si int *p = &x ¿Que significa p?");
+	var opts5 = ds_list_create();
+	ds_list_add(opts5, "si");  // correcta
+	ds_list_add(opts5, "no");
+	ds_list_add(opts5, "no");
+	ds_list_add(opts5, "no");
+	ds_map_add(q5, "options", opts5);
+	ds_map_add(q5, "correct", 0);
+	ds_map_add(q5, "not_appear", false);
+	ds_list_add(questions, q5);
 
 }
 
