@@ -15,10 +15,13 @@
     {"name":"inst_18A02003_1","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_34028629_1","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_4ED5F1F5","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_7E175940","path":"rooms/Room2/Room2.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"ui","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"ui","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"ui","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_7E175940","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E175940","objectId":{"name":"obj_time_manager","path":"objects/obj_time_manager/obj_time_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":32.0,},
+      ],"layers":[],"name":"ui","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"xd","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_91C4CED_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_91C4CED_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":6.0909085,"scaleY":3.9090905,"spriteId":{"name":"spr_score_box","path":"sprites/spr_score_box/spr_score_box.yy",},"x":32.0,"y":240.0,},
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_32978A75","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_32978A75","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.64285713,"spriteId":{"name":"spr_boss_shield","path":"sprites/spr_boss_shield/spr_boss_shield.yy",},"x":176.0,"y":-176.0,},

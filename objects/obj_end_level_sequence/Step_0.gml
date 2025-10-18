@@ -9,6 +9,11 @@ if(layer_sequence_is_finished(potato)){
 			terminar =true;
 		}
 	}
+	if(instance_exists(obj_preguntas_nv3)){
+		with(obj_preguntas_nv3){
+			terminar =true;
+		}
+	}
 	
 	 instance_destroy();
 }

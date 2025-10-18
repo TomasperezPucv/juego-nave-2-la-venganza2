@@ -3,7 +3,7 @@ questions = ds_list_create();
 //pregunta_seleccionada= noone;
 current_question_index = 0;
 phase = global.faseactual;
-tiempo_disponible_pregunta=20; //11 segundos para responder 1 pregunta
+tiempo_disponible_pregunta=40; //11 segundos para responder 1 pregunta
 nivel_completado =false;
 //ojo con esto!!!!!!!!
 global.nextquestion = true;

@@ -8,7 +8,7 @@ switch(global.faseactual){
 			timer_pregunta += delta_time;
 			if((timer_pregunta >= tiempo_disponible_pregunta*1000000)){
 				with(obj_enunciado){instance_destroy();}
-				with(obj_alternativa_nv2){instance_destroy();}
+				with(obj_alternativa_nv3){instance_destroy();}
 				global.salud--;
 				
 			
@@ -30,7 +30,7 @@ switch(global.faseactual){
 					var pos_x = 0;
 					var margen = 48;
 					var separacion =48;
-					var velocidad = 3;
+					var velocidad = 2;
 					var cantspeed =1;
 					
 					
@@ -41,9 +41,10 @@ switch(global.faseactual){
 						    
 
 						    // crear alternativa
-						    var alternativa = instance_create_layer(240, altura_alternativa + separacion*i, "Instances", obj_alternativa_nv2);
+						    var alternativa = instance_create_layer(room_width/2, altura_alternativa + separacion*i, "Instances", obj_alternativa_nv3);
 						    alternativa.option_text = texto;
-							alternativa.speed_x = velocidad/cantspeed;
+							alternativa.speed_x *=velocidad;
+							alternativa.speed_y *=velocidad;
 
 						    // marcar la correcta
 						    if (i == alternativa_correcta) {
@@ -121,7 +122,7 @@ switch(global.faseactual){
 		if(terminar==true&&jefe_destruido==true){
 			/*ojo*/global.current_level = 3;
 			global.faseactual = levelphase.ETAPANORMAL;
-			room_goto_next();
+			game_end();
 		}
 		break;
 		

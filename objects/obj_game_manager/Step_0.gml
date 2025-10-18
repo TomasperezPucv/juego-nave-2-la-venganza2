@@ -12,6 +12,11 @@ if(setup == false){
 		
 		getionador_de_preguntas = instance_create_layer(x+10,y,"Instances",obj_preguntas_nv2);
 	break
+	
+	case 3:
+		
+		getionador_de_preguntas = instance_create_layer(x+10,y,"Instances",obj_preguntas_nv3);
+	break
 
 
 }

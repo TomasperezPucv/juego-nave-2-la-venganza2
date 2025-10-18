@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,image_index,192,room_height-height,width/sprite_width,height/sprite_height,0,c_white,1);

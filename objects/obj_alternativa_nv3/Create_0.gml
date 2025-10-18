@@ -4,7 +4,15 @@ shoot_cooldown = 0;
 shoot_rate = 30;
 option_text = "test text";
 es_correcta =false;
-speed_x = 1;
+
+//aca se manejara la direccion aleatoria
+
+angulo = irandom(360);
+
+speed_x = sin(degtorad(angulo));
+speed_y = cos(degtorad(angulo));
+
+
 border_l =192;
 border_r = 830;
 aparicion = true; //esto es para que aparzca del lado y ahi recien colisiones
@@ -13,6 +21,8 @@ width =64;
 heigh = 64
 border = 5;
 scale =2;
+
+
 
 disparar = function(){
 	var n = random(1);
@@ -39,7 +49,7 @@ destruccion = function(){
 	}
 
 
-	with(obj_alternativa_nv2){
+	with(obj_alternativa_nv3){
 		instance_destroy();
 	}
 
@@ -50,5 +60,7 @@ destruccion = function(){
 	global.nextquestion = true;
 	
 }
+
+
 
 

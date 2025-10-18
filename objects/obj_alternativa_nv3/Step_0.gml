@@ -1,10 +1,14 @@
-
+if(rectangle_colissions(x,y+speed_y,width,heigh, obj_player_shield)||(y+speed_y<=0)){
+	speed_y*=-1;
+}
 
 if((x+speed_x <= border_l)||(x+speed_x+width>= border_r)){
 	speed_x *=-1;
 }
 
 x+=speed_x;
+y+=speed_y;
+
 
 
 if (shoot_cooldown >0) {shoot_cooldown -=1;}
@@ -28,14 +32,4 @@ with(obj_common_bullet){
 	}
 }
 
-/*if(y+speed_y > room_height){
-	instance_create_layer(x,y,"ui",obj_response_bad);
-	
-	with(obj_enunciado){
-		global.salud--;
-		instance_destroy();
-	}
-	
-	instance_destroy();
-}*/
 

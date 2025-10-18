@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_preguntas_nv2",
+  "%Name":"obj_alternativa_nv3",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_common_bullet","path":"objects/obj_common_bullet/obj_common_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_preguntas_nv2",
+  "name":"obj_alternativa_nv3",
   "overriddenProperties":[],
   "parent":{
-    "name":"manejadores de preguntas",
-    "path":"folders/Objects/game_managers/manejadores de preguntas.yy",
+    "name":"answers-enemies",
+    "path":"folders/Objects/answers-enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_answer_nv3",
+    "path":"sprites/spr_answer_nv3/spr_answer_nv3.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

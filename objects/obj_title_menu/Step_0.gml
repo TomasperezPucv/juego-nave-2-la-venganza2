@@ -91,6 +91,7 @@ if(accept_key){
 				//ir a nivel 3
 				
 				global.current_level =3;
+				room_goto(Room3);
 				break;
 				
 				case 3:
