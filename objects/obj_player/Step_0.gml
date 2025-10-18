@@ -12,7 +12,7 @@ x+=xvel;
 
 if (disparo_cooldown >0) {disparo_cooldown -=1;}
 
-if(keyboard_check(vk_space)&&disparo_cooldown<=0){
+if(keyboard_check(vk_space)&&disparo_cooldown<=0&&can_shoot==true){
 	//aca se crea la balita
 	instance_create_layer(x+28,y-20, "bullets", obj_common_bullet);
 	disparo_cooldown = disparo_rate;

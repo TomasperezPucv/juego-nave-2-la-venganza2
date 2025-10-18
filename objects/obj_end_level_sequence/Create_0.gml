@@ -1,0 +1,2 @@
+potato = layer_sequence_create("ui",x,y,seq_end);
+secuencia_lista = false;

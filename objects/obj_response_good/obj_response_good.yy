@@ -9,8 +9,8 @@
   "name":"obj_response_good",
   "overriddenProperties":[],
   "parent":{
-    "name":"game_managers",
-    "path":"folders/Objects/game_managers.yy",
+    "name":"respuestas_y_mensajes",
+    "path":"folders/Objects/game_managers/respuestas_y_mensajes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

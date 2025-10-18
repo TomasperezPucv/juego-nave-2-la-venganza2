@@ -1,3 +1,27 @@
-draw_self();
-draw_set_font(fnt_test);
-draw_text(5+(x - sprite_width/2), y - 8, texto);
+/*draw_self();
+draw_set_font(global.font_main);
+draw_text(5+(x - sprite_width/2), y - 8, texto);*/
+
+//crear nuevo tamanio segun el texto
+var new_width = string_width(texto)*scale;
+var line_height = string_height(texto)*scale;
+
+//redimensionar
+width = (new_width + border*2*scale);
+heigh = (line_height + border*2*scale);
+
+//reposicionar
+x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) / 2 - width / 2;
+y=0;
+
+//aca se dibuja el fondo
+draw_sprite_ext(sprite_index,image_index,x,y,width/sprite_width,heigh/sprite_height,0,c_white,1);
+
+//dibujar el texto
+
+draw_set_font(global.font_main);
+draw_set_valign(fa_top);
+draw_set_halign(fa_left);
+
+var _c = c_white;
+draw_text_transformed_color(x+border*scale,y+border*scale ,texto,scale,scale,0, _c,_c,_c,_c,1);
