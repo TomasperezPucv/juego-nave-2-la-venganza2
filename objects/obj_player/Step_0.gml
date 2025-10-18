@@ -8,7 +8,8 @@ if(place_meeting(x+xvel,y,obj_wall)){
 	xvel =0;
 }
 
-x+=xvel;
+if(can_move){x+=xvel;}
+
 
 if (disparo_cooldown >0) {disparo_cooldown -=1;}
 

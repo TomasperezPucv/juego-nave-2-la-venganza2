@@ -1,7 +1,7 @@
 switch(estado){
-	case bossStates.STILL:
+	case bossStates1.STILL:
 		if (irandom(100) < 2) { // 2% de probabilidad por frame (~1 vez cada 50 frames)
-            estado = bossStates.MOVING;
+            estado = bossStates1.MOVING;
             timer_movimiento = 0;
 
             // Dirección aleatoria: -1 o 1
@@ -9,12 +9,12 @@ switch(estado){
         }
 		
 		if (irandom(100) < 1) { // 2% de probabilidad por frame (~1 vez cada 50 frames)
-            estado = bossStates.ATTACK;
+            estado = bossStates1.ATTACK;
             
         }
 	break;
 	
-	case bossStates.MOVING:
+	case bossStates1.MOVING:
     // Calcula la nueva posición X
 	    var nueva_x = x + xvel * direccion;
     
@@ -31,18 +31,18 @@ switch(estado){
 	    timer_movimiento++;
     
 	    if (timer_movimiento >= tiempo_de_movimiento) {
-	        estado = bossStates.STILL;
+	        estado = bossStates1.STILL;
 	        direccion = 0;
 	    }
 	break;
 	
-	case bossStates.ATTACK:
+	case bossStates1.ATTACK:
 		for(var b=0; b<=cantidad_de_balas-1;b++){
 			var bala = instance_create_layer(x+b*sprite_width,y+10,"bullets",obj_common_bullet);
 			bala.enemigo = true;
 		
 		}
-		estado = bossStates.STILL;
+		estado = bossStates1.STILL;
 	
 	break
 		

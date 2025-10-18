@@ -18,8 +18,9 @@ lista_nivel2();
 
 terminar =false;
 jefe_destruido = false;
-
-
+respuestas_correctas_jefe =0;
+escudo_destruido = false;
+tiempo_disponible_jefe = 60;
 
 
 

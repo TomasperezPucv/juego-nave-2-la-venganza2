@@ -91,7 +91,7 @@ switch(global.faseactual){
 		ds_list_clear(questions);
 		preguntas_jefe1();
 		if(instance_exists(obj_boss_shield)==false&&escudo_destruido ==false){
-			 var escudo = instance_create_layer(x,y,"bullets",obj_boss_shield)
+			 var escudo = instance_create_layer(x,y,"just_lateral",obj_boss_shield)
 		}
 		
 		

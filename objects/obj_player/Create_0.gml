@@ -7,4 +7,4 @@ puntuacion = 0;
 global.puntos = puntuacion;
 global.salud = salud;
 can_shoot =true;
-
+can_move = true;
