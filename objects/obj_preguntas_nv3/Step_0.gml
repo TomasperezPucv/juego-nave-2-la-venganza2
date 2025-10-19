@@ -102,8 +102,8 @@ switch(global.faseactual){
 		
 		if(!instance_exists(obj_third_boss)&&jefe_destruido==false){
 			var jefe = instance_create_layer(x,y, "Instances",obj_third_boss)
-				if(!audio_is_playing(snd_firs_boss_music)){
-					audio_play_sound(snd_firs_boss_music,1,true);
+				if(!audio_is_playing(snd_final_boss_music)){
+					audio_play_sound(snd_final_boss_music,1,true);
 			}
 		}
 		

@@ -113,6 +113,7 @@
     {"id":{"name":"seq_response_bad","path":"sequences/seq_response_bad/seq_response_bad.yy",},},
     {"id":{"name":"seq_response_good","path":"sequences/seq_response_good/seq_response_good.yy",},},
     {"id":{"name":"snd_explision","path":"sounds/snd_explision/snd_explision.yy",},},
+    {"id":{"name":"snd_final_boss_music","path":"sounds/snd_final_boss_music/snd_final_boss_music.yy",},},
     {"id":{"name":"snd_firs_boss_music","path":"sounds/snd_firs_boss_music/snd_firs_boss_music.yy",},},
     {"id":{"name":"snd_shield_reflexion","path":"sounds/snd_shield_reflexion/snd_shield_reflexion.yy",},},
     {"id":{"name":"snd_voice_default","path":"sounds/snd_voice_default/snd_voice_default.yy",},},
