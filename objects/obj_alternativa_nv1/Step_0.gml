@@ -9,6 +9,7 @@ if(shoot_cooldown<=0){
 }
 
 //colisiones con bala
+
 with(obj_common_bullet){
 	if(enemigo == false){
 		var new_width = string_width(other.option_text)*other.scale;
@@ -17,7 +18,16 @@ with(obj_common_bullet){
 		heigh = (line_height + other.border*2*other.scale);
 		
 		if(point_in_rectangle(x,y,other.x,other.y,other.x+ other.width,other.y+ other.heigh)){
+			if(other.es_correcta){
+				with(obj_preguntas_nv1){
+					if(global.faseactual == levelphase.ETAPAJEFE){
+						respuestas_seguidas_jefe1 ++;
+					}
+				}
+			}
+			
 			other.destruccion();
+			
 		}
 	}
 }

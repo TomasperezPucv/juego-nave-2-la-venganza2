@@ -1,0 +1,1 @@
+draw_text(10,10,respuestas_seguidas_jefe1)
