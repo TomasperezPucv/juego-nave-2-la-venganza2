@@ -3,5 +3,5 @@ r_boundary = 832;
 height = 160;
 width = 640;
 x = l_boundary;
-y =room_height-height;
+y =room_height-100;
 

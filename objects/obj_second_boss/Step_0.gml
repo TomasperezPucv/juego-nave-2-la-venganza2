@@ -4,11 +4,14 @@ switch(estado){
 			xvel *=-1;
 		}
 		x+=xvel;
-		
-		if (irandom(100) < 1) { 
+		var un_random = irandom(500);
+		if (un_random <5) { 
 			//estado = choose(bossStates2.ATTACK,bossStates2.REFUERZOS3);
 			estado = bossStates2.ATTACK;
         }
+		if(un_random = 500){
+			estado = bossStates2.REFUERZOS3;
+		}
 		
 		
 	break;
@@ -24,13 +27,13 @@ switch(estado){
 	break;
 	
 	
-	/*case bossStates2.REFUERZOS3:
+	case bossStates2.REFUERZOS3:
 		var cantidad = 3;
-		for(var e =0 ; e<cantidad-1; e++){
-			var enemy = instance_create_layer(x+separacion_refuerzos*e,altura_de_refuerzos,"bullets",obj_enemy);
+		for(var e =0 ; e<cantidad; e++){
+			var enemy = instance_create_layer(256+separacion_refuerzos*e,0-sprite_height,"bullets",obj_enemy);
 		}
 		estado = bossStates2.MOVING;
-	break;*/
+	break;
 	
 	case bossStates2.ATAQUEFINAL:
 		if(!movimiento_completado){

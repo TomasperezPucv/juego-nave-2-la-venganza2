@@ -10,7 +10,9 @@ x+=speed_x;
 if (shoot_cooldown >0) {shoot_cooldown -=1;}
 
 if(shoot_cooldown<=0){
-	disparar();
+	if(global.faseactual == levelphase.ETAPANORMAL){
+		disparar();
+	}
 	shoot_cooldown = shoot_rate;
 
 }
