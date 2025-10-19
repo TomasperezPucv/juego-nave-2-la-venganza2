@@ -23,5 +23,7 @@ if(setup == false){
 }
 
 if((global.salud<=0)/*||(getionador_de_preguntas.nivel_completado == true)*/)
-{game_end()}
+{
+	log_event("Acaba de perder el juego",global.current_level,global.puntos);
+	game_end()}
 
