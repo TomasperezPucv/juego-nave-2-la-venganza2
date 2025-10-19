@@ -33,11 +33,11 @@ op_lenght = 0;
 menu_level = 0;
 
 //setup relacionado con los logs
-global.playerID = irandom_range(10000,99999);
+//global.playerID = irandom_range(10000,99999);
 
 
 ini_open("logdata.ini");
-ini_write_real("datos","ID",global.playerID);
+ini_write_string("datos","ID",global.playerID);
 ini_close()
 log_event("comenzo el juego",0,0);
 

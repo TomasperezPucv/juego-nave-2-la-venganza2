@@ -100,6 +100,7 @@
     {"id":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},},
     {"id":{"name":"cinematic_room","path":"rooms/cinematic_room/cinematic_room.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"id":{"name":"Room_id_player","path":"rooms/Room_id_player/Room_id_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
@@ -167,6 +168,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room_id_player","path":"rooms/Room_id_player/Room_id_player.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},

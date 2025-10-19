@@ -73,6 +73,7 @@
     {"name":"obj_warp","order":3,"path":"objects/obj_warp/obj_warp.yy",},
     {"name":"cinematic_room","order":4,"path":"rooms/cinematic_room/cinematic_room.yy",},
     {"name":"rm_main_menu","order":1,"path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"Room_id_player","order":6,"path":"rooms/Room_id_player/Room_id_player.yy",},
     {"name":"Room2","order":2,"path":"rooms/Room2/Room2.yy",},
     {"name":"Room3","order":5,"path":"rooms/Room3/Room3.yy",},
     {"name":"crearLog","order":6,"path":"scripts/crearLog/crearLog.yy",},

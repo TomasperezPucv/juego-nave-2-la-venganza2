@@ -11,7 +11,10 @@ if (is_active) {
     if (keyboard_check_pressed(vk_enter)) {
         is_active = false;
         // Guardar el ID (aquí iría la lógica de persistencia, por ejemplo, guardarlo en un objeto de control)
-        show_debug_message("ID del Jugador Capturado: " + input_string);
+        global.playerID = input_string;
+		show_debug_message("ID del Jugador Capturado: " + input_string);
         // Podrías pasar a la siguiente Room o destruir este objeto.
+		
+		room_goto(rm_main_menu);
     }
 }
