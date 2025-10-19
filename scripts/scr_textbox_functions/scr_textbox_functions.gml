@@ -88,11 +88,23 @@ function scr_text(_text){
 			//snd sonido para poner a los personajes
 			case "jefe1":
 				speaker_sprite[page_number] = spr_jefe1;
-				txtb_spr[page_number] = spr_dialog_jefe1
+				txtb_spr[page_number] = spr_dialog_jefe1;
 				snd[page_number] = snd_voice_default;
 			break;
-		
-		
+			
+			case "jefe2" :
+			 speaker_sprite[page_number] = spr_jefe2;
+			 txtb_spr[page_number] = spr_dialog_jefe2;
+			 snd[page_number] = snd_voice_default; 
+			
+			break;
+			
+			case "jefe3" :
+			 speaker_sprite[page_number] = spr_jefe3;
+			 txtb_spr[page_number] = spr_dialog_jefe3;
+			 snd[page_number] = snd_voice_default;
+			break;
+			
 		}
 		
 	}

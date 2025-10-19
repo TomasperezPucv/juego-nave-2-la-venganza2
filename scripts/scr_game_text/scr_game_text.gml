@@ -101,7 +101,85 @@ function scr_game_text(_text_id){
 				transicionar_a_nivel(1);
 			break;
 			
-				
+			case "JefeNivel2" : 
+			scr_text("¡Aqui se acaban los FUNDAMENTOS!, Yo como el Maestro de Arreglos sufriras los problemas de la eficiencia","jefe2",-1);
+			scr_text("Has demostrado tu conocimiento de manejo de Dirrecion, Me impresionas JOJO","jefe2",-1);
+			scr_text_float(70,74);
+			scr_text("Gracias Maestro de Arreglos, el camino no ha sido facil","player");
+			scr_text("Esto me ha permitido adquirir y probar mis conocimientos","player");
+			scr_text("EXCELENTE, esa es la idea","jefe2",-1);
+			scr_text_shake(0,9)
+			scr_text("BASTA me distraes de mi proposito, Estas Preparado para desafiar al SIGUIENTE NIVEL","jefe2",-1);
+			scr_text_shake(68,83);
+				scr_option("Por su puesto, Naci listo","Opcion_Conf_2");
+				scr_option("No estoy tan seguro, pero es un Desafio que tengo que afrontar","Opcion_Rea_2");
+			break;
+			
+			case "Opcion_Conf_2" : 
+				scr_text("Cuanta Confianza y Determinacion, Este desafio sera interesante","jefe2",-1);
+				scr_text("Pero cuidado Jugador, que no sera tan facil como BOSS, cuida tu tiempo es preciado JOJOJO","jefe2",-1);
+				scr_text("Como que tiempo.... esto no lo vi venir","player");
+				scr_text("ATENCION ATENCION! Se ha detectado el enfrentamiendo al Jefe del Nivel 2","helper",-1);
+				scr_text_shake(0,16);
+				scr_text("Presta Atencion Jugador, en esta fase tendras que responder 5 preguntas de manera correcta en un plazo de 1 minuto","helper",-1);
+				scr_text("Y cuidado con equivocarte!","helper",-1);
+					scr_option("Vamos a la Accion","comenzarjefe2");
+					scr_option("Necesitare concentrame al 100%","comenzarjefe2");
+			break;
+			case "Opcion_Rea_2" :
+				scr_text("Animo Jugador,Ya estas por la mitad confia en tus conocimientos","jefe2",-1);
+				scr_text("ATENCION ATENCION! Se ha detectado el enfrentamiendo al Jefe del Nivel 2","helper",-1);
+				scr_text_shake(0,16);
+				scr_text("Presta Atencion Jugador, en esta fase tendras que responder 5 preguntas de manera correcta en un plazo de 1 minuto","helper",-1);
+				scr_text("Y cuidado con equivocarte!","helper",-1);
+					scr_option("Tendre que superar esta debilidad","comenzarjefe2");
+					scr_option("Tendre que concentrarme para derrotarlo", "comenzarjefe2");
+			break;
+			case "comenzarjefe2":
+				scr_text("","player");
+				transicionar_a_nivel(2);
+			break;
+			
+			case "JefeNivel3":
+				scr_text("¡Aquí se detiene todo, Jugad! Yo soy el Guardián, y este es el corazón del **Heap** y el juez del **Stack**.", "jefe3",-1);
+				scr_text_color(26,34,c_yellow,c_yellow,c_white,c_white); // Destaca **Heap**
+		        scr_text_float(0,10);
+				scr_text("Has dominado direcciones y arreglos, y te enfrentaste a BOSS y a al Maestro de Arreglos ","jefe3",-1);
+				scr_text("Por lo que ya debes conocer todo sobre punteros y dirreciones WUOJOJO","jefe3",-1);
+				scr_text("PREPARATE, porque ahora te enfrentaras a la memoria DINAMICA","jefe3",-1);
+				scr_text("Asi es Guardian estoy mas que preparado para desafiarte","player");
+				scr_text("Tu habilidad debe ser absoluta. ¿Cómo enfrentarás el juicio final de la memoria?","jefe3",-1);
+					scr_option("Mi gestión de memoria es impecable, es hora de acabar esto", "Opcion_Conf_3");
+					scr_option("La Memoria Dinámica es mi mayor temor, pero la enfrentaré por la disciplina.", "Opcion_Rea_3");
+			break;
+			
+			case "Opcion_Conf_3": 
+			scr_text("Ya tengo conocimientos sobre el manejo de funciones para manejar la memoria dinamica, no me das miedo","player");
+			scr_text("¡Que determinacion tienes Jugador!, Pero la confianza es el primero error","jefe3",-1);
+			scr_text("El reloj no espera y mis preguntas estan diseñadas para provocar fallos criticos","jefe3",-1);
+			scr_text("ATENCION ATENCION! Se ha detectado el enfrentamiendo al Jefe del Nivel 3","helper",-1);
+				scr_text_shake(0,16);
+			scr_text("Jugador en este nivel tienes que responder 10 preguntas de mmanera correcta en un tiempo limite de 1 minuto y 30 segundos","helper",-1);
+			scr_text("Una vez que acumules 3 fallos, sufriras un Segmentation faul y tendras un Game Over","helper",-1);
+				scr_option("Mi conocimiento es mi escudo. ¡Adelante!","comenzarjefe3");
+				scr_option("Venceré el miedo al Segmentation Fault","comenzarjefe3");
+				scr_option("Voy por la maestría total.","comenzarjefe3");
+			break;
+			
+			case "Opcion_Rea_3" : 
+			scr_text("Hoy conoceras el terror del segmentation fault , estas preparado novato!","jefe3",-1);
+			scr_text("Ser honesto no te salvara Jugador, el segmentation faul no perdona errores","jefe3",-1);
+			scr_text("ATENCION ATENCION! Se ha detectado el enfrentamiendo al Jefe del Nivel 3","helper",-1);
+				scr_text_shake(0,16);
+			scr_text("Jugador en este nivel tienes que responder 10 preguntas de mmanera correcta en un tiempo limite de 1 minuto y 30 segundos","helper",-1);
+			scr_text("Una vez que acumules 3 fallos, sufriras un Segmentation faul y tendras un Game Over","helper",-1);
+				scr_option("Desafío de precisión y resistencia aceptado.","comenzarjefe3");
+				scr_option("Venceré el miedo al Segmentation Fault","comenzarjefe3");
+			break;
+			case "comenzarjefe3":
+				scr_text("","player");
+				transicionar_a_nivel(3);
+			break;
 	
 	}
 
