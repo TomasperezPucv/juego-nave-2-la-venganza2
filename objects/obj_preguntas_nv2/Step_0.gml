@@ -108,7 +108,7 @@ switch(global.faseactual){
 		
 		if(!instance_exists(obj_second_boss)&&jefe_destruido==false){
 			tiempo_disponible_pregunta = tiempo_disponible_jefe;
-			
+			log_event("Paso al segundo jefe",1,global.puntos);
 			var jefe = instance_create_layer(room_width/2,66, "Instances",obj_second_boss)
 				if(!audio_is_playing(snd_firs_boss_music)){
 					audio_play_sound(snd_firs_boss_music,1,true);
@@ -188,6 +188,7 @@ switch(global.faseactual){
 		if(terminar==true&&jefe_destruido==true){
 			/*ojo*/global.current_level = 3;
 			global.faseactual = levelphase.ETAPANORMAL;
+			log_event("Paso a la tercera etapa",3,global.puntos);
 			room_goto_next();
 		}
 		break;

@@ -47,6 +47,13 @@ destruccion = function(){
 		global.puntos-=50;
 		instance_create_layer(x,y,"ui",obj_response_bad);
 	}
+	
+	var enun; 
+	with(obj_enunciado){
+		enun = texto;
+	}
+	
+	log_event("selecciono alternativa",3,global.puntos,enun,option_text,es_correcta);
 
 
 	with(obj_alternativa_nv3){

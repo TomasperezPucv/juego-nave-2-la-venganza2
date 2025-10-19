@@ -88,6 +88,8 @@ switch(global.faseactual){
 		break;
 		
 	case levelphase.ETAPAJEFE:
+		//loguear que paso ajefe
+		
 		ds_list_clear(questions);
 		preguntas_jefe1();
 		if(instance_exists(obj_boss_shield)==false&&escudo_destruido ==false){
@@ -97,6 +99,7 @@ switch(global.faseactual){
 		
 		if(!instance_exists(obj_first_boss)&&jefe_destruido==false){
 			var jefe = instance_create_layer(room_width/2,66, "Instances",obj_first_boss)
+			log_event("Paso al primer jefe",1,global.puntos);
 				if(!audio_is_playing(snd_firs_boss_music)){
 					audio_play_sound(snd_firs_boss_music,1,true);
 			}
@@ -172,6 +175,7 @@ switch(global.faseactual){
 		if(terminar==true&&jefe_destruido==true){
 			/*ojo*/global.current_level = 2;
 			global.faseactual = levelphase.ETAPANORMAL;
+			log_event("Paso a la segunda etapa",2,global.puntos);
 			room_goto_next();
 		}
 		break;
