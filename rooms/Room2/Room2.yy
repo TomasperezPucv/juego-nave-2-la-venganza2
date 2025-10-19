@@ -1,4 +1,4 @@
-||{
+{
   "$GMRoom":"v1",
   "%Name":"Room2",
   "creationCodeFile":"",
