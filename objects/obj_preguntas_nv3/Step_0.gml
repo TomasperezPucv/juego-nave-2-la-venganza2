@@ -97,11 +97,12 @@ switch(global.faseactual){
 		preguntas_jefe3();
 		
 		if(instance_exists(obj_boss_shield)==false&&escudo_destruido ==false){
-			 var escudo = instance_create_layer(x,y,"just_lateral",obj_boss_shield)
+			 var escudo = instance_create_layer(x,y,"just_lateral",obj_boss_shield);
 		}
 		
 		if(!instance_exists(obj_third_boss)&&jefe_destruido==false){
-			var jefe = instance_create_layer(x,y, "Instances",obj_third_boss)
+			var jefe = instance_create_layer(x,y, "Instances",obj_third_boss);
+			log_event("Paso al tercer jefe",1,global.puntos);
 				if(!audio_is_playing(snd_final_boss_music)){
 					audio_play_sound(snd_final_boss_music,1,true);
 			}
@@ -178,6 +179,7 @@ switch(global.faseactual){
 		if(terminar==true&&jefe_destruido==true){
 			/*ojo*/global.current_level = 3;
 			global.faseactual = levelphase.ETAPANORMAL;
+			log_event("Paso a ganado el juego, felicidades",3,global.puntos);
 			game_end();
 		}
 		break;

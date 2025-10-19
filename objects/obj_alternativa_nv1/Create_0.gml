@@ -28,6 +28,11 @@ disparar = function(){
 
 destruccion = function(){
 	with(obj_common_bullet) instance_destroy();
+	
+	var enun; 
+	with(obj_enunciado){
+		enun = texto;
+	}
 	//va la logica si esta bien o mal
 	if(es_correcta){
 		global.puntos+=100;
@@ -38,6 +43,9 @@ destruccion = function(){
 		global.puntos-=50;
 		instance_create_layer(x,y,"ui",obj_response_bad);
 	}
+	
+	//guardar el log de la alternativa
+	log_event("selecciono alternativa",1,global.puntos,enun,option_text,es_correcta);
 
 
 	with(obj_alternativa_nv1){
