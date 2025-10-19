@@ -12,7 +12,7 @@ global.tiempo_para_responder = tiempo_disponible_pregunta;
 timer_pregunta =0;
 esperando_nueva_pregunta = true;
 
-lista_nivel2();
+lista_nivel3();
 
 //esto es solo para correr la cinematica de jefe 1 vez
 

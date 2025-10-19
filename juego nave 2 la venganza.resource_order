@@ -73,6 +73,7 @@
     {"name":"rm_main_menu","order":1,"path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"Room2","order":2,"path":"rooms/Room2/Room2.yy",},
     {"name":"Room3","order":5,"path":"rooms/Room3/Room3.yy",},
+    {"name":"crearLog","order":6,"path":"scripts/crearLog/crearLog.yy",},
     {"name":"funciones_logica_nivel_normal","order":2,"path":"scripts/funciones_logica_nivel_normal/funciones_logica_nivel_normal.yy",},
     {"name":"game_phases","order":1,"path":"scripts/game_phases/game_phases.yy",},
     {"name":"scr_game_text","order":1,"path":"scripts/scr_game_text/scr_game_text.yy",},
