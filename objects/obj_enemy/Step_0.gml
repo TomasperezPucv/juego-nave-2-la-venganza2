@@ -1,5 +1,8 @@
 if(tiempo_de_advertencia <=0){
 	advertir = false;
+	with(advertencia){
+		destruir = true;
+	}
 }else{
 	tiempo_de_advertencia--;
 }

@@ -172,7 +172,7 @@ switch(global.faseactual){
 			with(obj_alternativa_nv2){instance_destroy();}
 			
 			var enunciado = instance_create_layer(room_width/2,32,"ui",obj_enunciado);
-			enunciado.texto = "Dale el ultimo golpe!!!";
+			enunciado.texto = "Ahora, dale su mereciado, RAPIDO!!";
 		}
 		
 		

@@ -22,7 +22,7 @@ heigh = 64
 border = 5;
 scale =2;
 
-
+can_shoot =true;
 
 disparar = function(){
 	var n = random(1);

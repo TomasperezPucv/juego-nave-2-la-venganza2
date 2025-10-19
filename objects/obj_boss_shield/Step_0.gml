@@ -12,13 +12,13 @@ if(instance_exists(obj_preguntas_nv2)){
 		}
 	}
 }
-/*if(instance_exists(obj_preguntas_nv3)){
+if(instance_exists(obj_preguntas_nv3)){
 	with(obj_preguntas_nv3){
 		if(escudo_destruido){
 			other.destruir =true;
 		}
 	}
-}*/
+}
 
 if(destruir){
 	instance_destroy();
