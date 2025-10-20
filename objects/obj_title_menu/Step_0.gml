@@ -28,6 +28,7 @@ if(accept_key){
 				//comenzar juego
 				case 0:
 				room_goto_next(); 
+				audio_stop_sound(snd_menu_music);
 				break;
 		
 				//configuraciones
@@ -78,6 +79,7 @@ if(accept_key){
 				//ir a nivel 1
 				
 				global.current_level =1;
+				audio_stop_sound(snd_menu_music);
 				room_goto(Room1);
 				break;
 				
@@ -85,6 +87,7 @@ if(accept_key){
 				//ir a nivel 2
 				
 				global.current_level =2
+				audio_stop_sound(snd_menu_music);
 				room_goto(Room2);
 				break;
 				
@@ -92,6 +95,7 @@ if(accept_key){
 				//ir a nivel 3
 				
 				global.current_level =3;
+				audio_stop_sound(snd_menu_music);
 				room_goto(Room3);
 				break;
 				

@@ -13,9 +13,9 @@ switch(global.faseactual){
 				
 			
 			}
-			 
+	 		 
 			if(((timer_pregunta >= tiempo_disponible_pregunta*1000000)||(global.nextquestion==true))){
-				global.nextquestion =false;
+				 global.nextquestion =false;
 				timer_pregunta=0;
 				
 				var pregunta_seleccionada  = seleccionar_pregunta();
@@ -98,6 +98,7 @@ switch(global.faseactual){
 		break;
 		
 	case levelphase.ETAPAJEFE:
+		audio_stop_sound(snd_nivel_2_music);
 		ds_list_clear(questions);
 		preguntas_jefe2();
 		
@@ -110,8 +111,8 @@ switch(global.faseactual){
 			tiempo_disponible_pregunta = tiempo_disponible_jefe;
 			log_event("Paso al segundo jefe",1,global.puntos);
 			var jefe = instance_create_layer(room_width/2,66, "Instances",obj_second_boss)
-				if(!audio_is_playing(snd_firs_boss_music)){
-					audio_play_sound(snd_firs_boss_music,1,true);
+				if(!audio_is_playing(snd_jefe_2_music)){
+					audio_play_sound(snd_jefe_2_music,1,true);
 			}
 			
 		}

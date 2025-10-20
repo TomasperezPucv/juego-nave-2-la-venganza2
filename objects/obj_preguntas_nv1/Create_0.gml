@@ -20,6 +20,8 @@ jefe_destruido = false;
 
 //escudo =noone;
 escudo_destruido = false;
+audio_play_sound(snd_nivel_1_music,1,true);
+ 
 //ESTO ERA PARA SABER SI SE  guardaban bienlos datos bdefhijo
 
 /*var enunciado = instance_create_layer(512,5920,"ui",obj_enunciado);

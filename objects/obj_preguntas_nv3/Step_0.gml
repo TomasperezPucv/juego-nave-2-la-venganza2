@@ -93,6 +93,7 @@ switch(global.faseactual){
 		break;
 		
 	case levelphase.ETAPAJEFE:
+		audio_stop_sound(snd_nivel_3_music);
 		ds_list_clear(questions);
 		preguntas_jefe3();
 		

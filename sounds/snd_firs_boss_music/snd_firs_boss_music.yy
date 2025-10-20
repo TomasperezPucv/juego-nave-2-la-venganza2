@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":129.68535,
+  "duration":196.23367,
   "name":"snd_firs_boss_music",
   "parent":{
     "name":"music",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_firs_boss_music.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.46,
 }

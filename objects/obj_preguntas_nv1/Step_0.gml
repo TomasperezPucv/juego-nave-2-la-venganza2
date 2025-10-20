@@ -2,6 +2,7 @@ var _meduelelacabeza =false;
 switch(global.faseactual){
 	
 	case levelphase.ETAPANORMAL:
+		 
 		if (global.respuestas_correctas == 10){esperando_nueva_pregunta = false;}
 		if((esperando_nueva_pregunta)){
 			
@@ -89,7 +90,7 @@ switch(global.faseactual){
 		
 	case levelphase.ETAPAJEFE:
 		//loguear que paso ajefe
-		
+		audio_stop_sound(snd_nivel_1_music);
 		ds_list_clear(questions);
 		preguntas_jefe1();
 		if(instance_exists(obj_boss_shield)==false&&escudo_destruido ==false){

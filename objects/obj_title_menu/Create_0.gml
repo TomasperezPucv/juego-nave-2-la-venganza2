@@ -1,4 +1,4 @@
-//escala para agrandar
+ //escala para agrandar
 menu_scale = 3; 
 global.current_level =1;
 
@@ -6,6 +6,7 @@ width = 64;
 height = 104;
 global.faseactual = levelphase.ETAPANORMAL;
 global.cinematicaprejefe = false;
+audio_play_sound(snd_menu_music,1,true);
 op_border = 8;
 op_space = 16;
 

@@ -21,6 +21,7 @@ jefe_destruido = false;
 
 respuestas_correctas_jefe =0;
 escudo_destruido = false;
+audio_play_sound(snd_nivel_3_music,1,true);
 
 
 
